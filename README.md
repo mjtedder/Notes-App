@@ -2,7 +2,7 @@
 
 ### Technologies Used:
 
-HTML5| Bootstrap 4 | JavaScript | markedjs
+HTML5 | Bootstrap 4 | JavaScript | markedjs
 
 ### User Stories
 
