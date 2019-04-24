@@ -1,0 +1,9 @@
+
+/* Make icons clickable */
+#clickableAwesomeFont {
+    cursor: pointer;
+}
+
+.icons {
+    cursor: pointer;
+}
