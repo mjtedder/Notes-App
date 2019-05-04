@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
 // Setting global variables
-const noteTitle = $('.card-header')
-const noteContent = $('.card-body')
+const noteTitle = $('#title')
+const noteContent = $('#content')
 const defaultTitle = 'What\'s on your mind today?'
 const defaultContent = 'Let\'s write about it!'
 
@@ -14,24 +14,31 @@ noteTitle.text(localStorage.getItem('title'))
 // localStorage.setItem('content', defaultContent)
 noteContent.text(localStorage.getItem('content'))
 
-console.log(localStorage)
+// console.log(localStorage)
 
 
-// Create note function
+// Save user input function
  let save = () => {
-    let title = $('.card-header').text()
+    let title = $('#title').text()
     localStorage.setItem('title', title)
-    let content = $('.card-body').text()
+    let content = $('#content').text()
     localStorage.setItem('content', content)
 }
 
 // Retrieve localStorage items
 localStorage.getItem('test')
 
+// Click event that deletes a note
+ let remove = () => {
+     $('#title').remove();
+ }
+
 // Call function everytime the user makes a keystroke
 document.onkeyup = () => save()
 document.onkeyup = () => save()
-
+$(document).on('click', '#delete', function() {
+    $('.card').hide();
+})
 
 
 

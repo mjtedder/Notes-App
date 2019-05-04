@@ -20,29 +20,32 @@
 
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4 text-center">Markdown Notes
-                <span style="color: green; font-size: 2rem;" id='clickableAwesomeFont'>
-                    <i class="fas fa-plus-circle"></i>
-                </span>
-                <span class="icons" style="font-size: 2rem;">
-                    <i class="fas fa-check"></i>
-                    <i class="far fa-trash-alt"></i>
-                </span>
-            </h1>
-        </div>
+        <h1 class="display-4 text-center">Markdown Notes
+            <span style="color: green; font-size: 2rem;" id='addNote'>
+                <i class="fas fa-plus-circle"></i>
+            </span>
+            <span class="icons" style="font-size: 2rem;">
+                <i class="fas fa-check"></i>
+            </span>
+        </h1>
     </div>
 
     <!-- CARD GRID -->
     <div class="container">
         <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="card">
-                <div contenteditable class="card-header">
-                    Note Title
-                </div>
-                <div contenteditable class="card-body">
-                    Note body goes here.
+            <div class="col-sm-3">
+                <div class="card">
+                    <div contenteditable class="card-header" id='title'>
+                        Note Title
+                    </div>
+                    <div contenteditable class="card-body" id='content'>
+                        Note body goes here.
+                    </div>
+                    <div class="card-footer">
+                        <span class='icons' style='font-size: 1rem; color: red' id='delete'>
+                            <i class="far fa-trash-alt"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
